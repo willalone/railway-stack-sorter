@@ -82,7 +82,7 @@ class Stack extends BaseClass {
 
 **Factory Method** - порождающий паттерн проектирования, который предоставляет интерфейс для создания объектов без указания их конкретных классов.
 
-```
+```javascript
 class WagonFactory {
     static createWagon(type, number) {
         return type.toUpperCase() === 'A' ? new WagonTypeA(number) : 
@@ -102,7 +102,7 @@ class WagonFactory {
 
 **Ключевые методы:**
 
-```
+```javascript
 _parseWagons(lines) {
     return lines
         .map(line => line.trim())
@@ -136,7 +136,7 @@ node railway-stack-sorter.js
 
 ### Использование в коде
 
-```
+```javascript
 const { RailwaySortingYard, WagonFactory } = require('./railway-stack-sorter.js');
 
 // Создание экземпляра сортировочного узла
